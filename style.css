@@ -1,0 +1,88 @@
+:root {
+  --font-size-p: 1.7rem;
+  --font-size-h1: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  min-height: 100vh;
+  min-width: 40%;
+}
+
+/* nav bar */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10%; */
+  padding: 0rem 1rem;
+  border-bottom: 1px solid black;
+}
+
+.nav-bar h1 {
+  font-size: var(--font-size-h1);
+  font-style: italic;
+}
+
+.nav-bar nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-bar a {
+  font-size: var(--font-size-p);
+  font-weight: 600;
+}
+
+/* section photo */
+
+.photo-section {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.photo-section > img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.photo-section p {
+  font-size: var(--font-size-p);
+  text-align: center;
+}
+
+.photo-section > nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.photo-section > nav img {
+  width: 30px;
+}
