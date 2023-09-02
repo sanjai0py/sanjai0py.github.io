@@ -1,6 +1,7 @@
 :root {
   --font-size-p: 1.7rem;
-  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h1: 3.5rem;
 }
 
 html {
@@ -12,12 +13,27 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+p {
+  font-size: var(--font-size-p);
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
 
 body {
+  font-family: monospace;
+  font-size: var(--font-size-p);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,23 +41,19 @@ body {
 
 .main-container {
   min-height: 100vh;
-  min-width: 40%;
+  max-width: 600px;
 }
 
+/* ********** */
 /* nav bar */
+/* ********** */
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 10%; */
   padding: 0rem 1rem;
   border-bottom: 1px solid black;
-}
-
-.nav-bar h1 {
-  font-size: var(--font-size-h1);
-  font-style: italic;
 }
 
 .nav-bar nav {
@@ -51,14 +63,16 @@ body {
 }
 
 .nav-bar a {
-  font-size: var(--font-size-p);
+  font-size: 2rem;
   font-weight: 600;
 }
 
+/* ********** */
 /* section photo */
+/* ********** */
 
 .photo-section {
-  padding-top: 5rem;
+  margin: 4.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,11 +85,6 @@ body {
   border-radius: 50%;
 }
 
-.photo-section p {
-  font-size: var(--font-size-p);
-  text-align: center;
-}
-
 .photo-section > nav ul {
   display: flex;
   align-items: center;
@@ -83,6 +92,80 @@ body {
   gap: 3rem;
 }
 
+.photo-section > nav li {
+  color: blue;
+}
+
 .photo-section > nav img {
   width: 30px;
+}
+
+.welcome-text {
+  padding: 0 14px;
+  min-width: 3rem;
+}
+
+.welcome-text p {
+  font-size: var(--font-size-p);
+  /* text-align: center; */
+}
+
+/* ********** */
+/* about section */
+/* ********** */
+
+.about-section {
+  padding: 0 20px;
+  margin-bottom: 4.5rem;
+}
+
+/* ********** */
+/* skills section */
+/* ********** */
+
+.skills-section {
+  padding: 0 20px;
+  margin-bottom: 4.5rem;
+}
+
+.skills-section > p a {
+  color: blue;
+}
+
+.skills-section > p a:hover {
+  text-decoration: underline;
+}
+
+.skills ul {
+  display: grid;
+  gap: 5px;
+  /* flex-direction: column;
+  gap: 5px; */
+}
+
+.skills li {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
+  width: fit-content;
+}
+/* .skills li {} */
+
+/* .skills-section h2 {
+  padding: 0;
+  margin-bottom: 20px;
+} */
+
+/* ********** */
+/* projects section */
+/* ********** */
+
+.projects-section {
+  padding: 0 20px;
+  margin-bottom: 4.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 5rem;
 }
