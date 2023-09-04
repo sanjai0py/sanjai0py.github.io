@@ -1,3 +1,5 @@
+"use strict";
+
 const age = document.getElementById("age");
 
 function calcAge() {
