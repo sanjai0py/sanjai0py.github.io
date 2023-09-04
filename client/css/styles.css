@@ -37,10 +37,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* line-height: 1; */
   /* background-color: #f6f6f6; */
 }
 
-.main-container {
+.wrapper-container {
   min-height: 100vh;
   max-width: 600px;
   background-color: white;
@@ -58,16 +59,21 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* .nav-bar h1 {
+  font-size: var(--font-size-h1);
+} */
+
 .nav-bar nav {
+  font-size: 1.6rem;
+  font-weight: 800;
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 
-.nav-bar a {
-  font-size: 2rem;
-  font-weight: 600;
-}
+/* .nav-bar a {
+  
+} */
 
 /* ********** */
 /* section photo */
