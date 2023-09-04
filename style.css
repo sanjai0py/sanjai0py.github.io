@@ -37,11 +37,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #f6f6f6; */
 }
 
 .main-container {
   min-height: 100vh;
   max-width: 600px;
+  background-color: white;
 }
 
 /* ********** */
